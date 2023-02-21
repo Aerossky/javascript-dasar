@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Konversi String Dan Number</title>
+</head>
+<body>
+    <script>
+        const a = "1";
+        const b = 1;
+        const sum = parseInt(a) + b;
+
+        document.writeln(`<p>${sum}</p>`)
+        document.writeln(`<p>${parseInt(1.1)}</p>`)
+        document.writeln(`<p>${parseFloat("1.1")}</p>`)
+        document.writeln(`<p>${Number("1.1")}</p>`)
+
+        // NAN = Not A Number
+        document.writeln(`<p>${Number("1.1tess")}</p>`)
+        document.writeln(`<p>${isNaN("1.1tess")}</p>`)
+
+        const c = 1;
+        const d = 1;
+
+        if (isNaN(c)) {
+            document.writeln(`<p>True</p>`)
+        } else {
+            document.writeln(`<p>False</p>`)
+        }
+
+
+
+
+    </script>
+    
+</body>
+</html>
